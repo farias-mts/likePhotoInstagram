@@ -65,17 +65,21 @@ class Instagram():
             self.browser.execute_script('''
                 window.scrollTo(0, document.body.scrollHeight);
             ''') 
-            time.sleep(1)   
-
-teste = Instagram()
-teste.login('engenbot', 'Baden2021')
+            time.sleep(1)
+            
+user_ = "your user" #your user
+pass_ = "your pass" #your pass
+qtd_photos = 300 #Quantidade de fotos para curtir p/ hashtag
 list_hashtag = [
     'sextou',
     'sabadou',
     'bipolar'
 ]
-teste.HashLike(list_hashtag, 300)
-#teste.likeFeed()
+
+
+teste = Instagram()
+teste.login(user_, pass_)
+teste.HashLike(list_hashtag, qtd_photos)
     
 
 
