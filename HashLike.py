@@ -1,4 +1,4 @@
-#import chromedriver_autoinstaller
+import chromedriver_autoinstaller
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium import webdriver
 from selenium.webdriver.common import keys
@@ -7,7 +7,7 @@ import time
 
 class Instagram():
     def __init__(self):
-        #chromedriver_autoinstaller.install()
+        chromedriver_autoinstaller.install()
         self.browser = webdriver.Chrome(ChromeDriverManager().install())
         self.browser.get('http://www.instagram.com')
 
